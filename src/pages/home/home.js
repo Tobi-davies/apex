@@ -242,7 +242,6 @@ const Home = () => {
                 fontFamily="inherit"
                 fontSize={15}
                 marginBottom={10}
-                // maxWidth={380}
                 maxWidth={isLaptop ? 380 : isMobile ? 450 : "unset"}
                 border="1px solid red"
                 textAlign={isLaptop ? "unset" : isMobile ? "center" : "unset"}
