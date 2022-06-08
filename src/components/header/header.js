@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { useMediaQuery } from "react-responsive";
 import { Pane, Text, majorScale } from "evergreen-ui";
 import Container from "../container/container";
 import ApexLogo from "../../assets/images/Apex-Logo.png";
+import { ReactComponent as Hamburger } from "../../assets/icons/menu-hamburger.svg";
+import { VIEWPORT_BREAKPOINTS } from "../../enums";
 
 const GetStartedBtn = styled.button`
   outline: none;
@@ -31,6 +34,9 @@ export const NavList = styled.ul`
 `;
 
 const Header = () => {
+  const isTablet = useMediaQuery({
+    query: `(min-width: ${VIEWPORT_BREAKPOINTS.md}px)`,
+  });
   return (
     <Container
       maxWidth={1100}
@@ -45,21 +51,25 @@ const Header = () => {
         <img src={ApexLogo} alt="apex logo" />
       </Pane>
 
-      {/* <Pane> */}
-      <NavList>
-        <li>Demos</li>
-        <li>About</li>
-        <li>Blog</li>
-        <li>Pages</li>
-        <li>Contact</li>
-      </NavList>
-      {/* </Pane> */}
-      <Pane>
-        <Text fontSize="16px" fontFamily="inherit">
-          Login
-        </Text>
-        <GetStartedBtn>Get Started Free</GetStartedBtn>
-      </Pane>
+      {isTablet ? (
+        <>
+          <NavList>
+            <li>Demos</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Pages</li>
+            <li>Contact</li>
+          </NavList>
+          <Pane>
+            <Text fontSize="16px" fontFamily="inherit">
+              Login
+            </Text>
+            <GetStartedBtn>Get Started Free</GetStartedBtn>
+          </Pane>
+        </>
+      ) : (
+        <Hamburger />
+      )}
     </Container>
   );
 };
