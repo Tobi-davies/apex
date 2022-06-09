@@ -31,6 +31,7 @@ const LandingPage = () => {
         display="flex"
         className="row"
         // border="1px solid blue"
+        gap={isLaptop ? "unset" : 30}
       >
         <Pane
           className="col-12 col-lg-5"
