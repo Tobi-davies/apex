@@ -29,16 +29,17 @@ const LandingPage = () => {
       <Container maxWidth={1130} display="flex" className="row">
         <Pane
           className="col-12 col-lg-5"
-          border="1px solid blue"
+          // border="1px solid blue"
           // paddingRight={40}
           paddingTop={isLaptop ? 70 : 30}
           // marginRight={40}
         >
           <Pane
-            border="1px solid red"
+            // border="1px solid red"
             //  width="85%"
             maxWidth={isLaptop ? 450 : "100%"}
             textAlign={isLaptop ? "unset" : isMobile ? "center" : "unset"}
+            className="ml-n3 mt-n3 mt-sm-0 ml-sm-0"
           >
             <Paragraph
               color="#1B1C20"
@@ -52,8 +53,7 @@ const LandingPage = () => {
             <Paragraph
               fontFamily="inherit"
               fontSize={16}
-              border="1px solid red"
-              // maxWidth={isLaptop ? 350 : "100%"}
+              // border="1px solid red"
               maxWidth={isLaptop ? 370 : isMobile ? 500 : "100%"}
               // margin={isLaptop ? "unset" : "auto"}
               // margin={isLaptop ? "unset" : "auto"}
@@ -65,7 +65,7 @@ const LandingPage = () => {
               without any interruption.
             </Paragraph>
             <Pane
-              border="1px solid black"
+              // border="1px solid black"
               // className="mx-sm-auto mx-lg-0"
               display="flex"
               justifyContent={
@@ -83,12 +83,12 @@ const LandingPage = () => {
               flexDirection={isMobile ? "row" : "column"}
               marginTop={isLaptop ? 85 : 40}
               justifyContent={isLaptop ? "unset" : "center"}
-              border="1px solid green"
+              // border="1px solid green"
               gap={isMobile ? "unset" : 10}
             >
               <Pane
                 // className="col-md-7"
-                border="1px solid black"
+                // border="1px solid black"
                 display="flex"
                 gap={15}
                 paddingRight={15}
@@ -134,12 +134,13 @@ const LandingPage = () => {
 
               <Pane
                 // className="col-md-5"
-                border="1px solid red"
+                // border="1px solid red"
                 paddingLeft={15}
                 display="flex"
                 flexDirection="column"
                 justifyContent="space-between"
                 gap={5}
+                className="ml-n3 ml-sm-0"
               >
                 <Paragraph
                   fontWeight={700}
@@ -165,7 +166,7 @@ const LandingPage = () => {
         </Pane>
         <Pane
           className="col-12 col-lg-7"
-          border="1px solid red"
+          // border="1px solid red"
           position="relative"
         >
           <img

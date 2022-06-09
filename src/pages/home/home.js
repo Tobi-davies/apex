@@ -46,8 +46,8 @@ const Home = () => {
       <Container
         maxWidth={1100}
         fontFamily="'DM Sans', sans-serif"
-        paddingBottom={majorScale(10)}
-        paddingTop={majorScale(3)}
+        paddingBottom={isTablet ? majorScale(10) : majorScale(4)}
+        paddingTop={isTablet ? majorScale(3) : majorScale(2)}
       >
         {/* heading */}
         <Text
@@ -71,7 +71,7 @@ const Home = () => {
           <Pane
             // width="33.3%"
             className="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0"
-            border="1px solid red"
+            // border="1px solid red"
             display="flex"
             flexDirection={isTablet ? "row" : "column"}
             textAlign={isTablet ? "unset" : "center"}
@@ -105,7 +105,7 @@ const Home = () => {
           <Pane
             // width="33.3%"
             className="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0"
-            border="1px solid red"
+            // border="1px solid red"
             display="flex"
             flexDirection={isTablet ? "row" : "column"}
             textAlign={isTablet ? "unset" : "center"}
@@ -135,7 +135,7 @@ const Home = () => {
           <Pane
             // width="33.3%"
             className="col-12 col-md-6 col-lg-4 mx-md-auto"
-            border="1px solid red"
+            // border="1px solid red"
             display="flex"
             flexDirection={isTablet ? "row" : "column"}
             textAlign={isTablet ? "unset" : "center"}
@@ -178,8 +178,7 @@ const Home = () => {
         >
           <Pane
             width={isLaptop ? "50%" : "100%"}
-            // width="50%"
-            border="1px solid red"
+            // border="1px solid red"
             display="flex"
             alignItems="center"
             justifyContent={isLaptop ? "unset" : "center"}
@@ -192,16 +191,15 @@ const Home = () => {
             />
           </Pane>
           <Pane
-            // width="50%"
             width={isLaptop ? "50%" : "100%"}
-            border="1px solid red"
+            // border="1px solid red"
             display="flex"
             alignItems="center"
           >
             <Pane
               maxWidth={isLaptop ? 420 : "unset"}
               width="100%"
-              border="1px solid green"
+              // border="1px solid green"
               // textAlign={isLaptop ? "unset" : "center"}
               // paddingRight={30}
               paddingTop={
@@ -218,7 +216,7 @@ const Home = () => {
                 fontFamily="Uregular"
                 textAlign={isLaptop ? "unset" : isMobile ? "center" : "unset"}
                 maxWidth={600}
-                border="1px solid red"
+                // border="1px solid red"
                 className="mx-sm-auto mx-lg-0"
               >
                 Meet your customers, with live video chat
@@ -226,7 +224,7 @@ const Home = () => {
               <Paragraph
                 color="#383A47"
                 fontFamily="inherit"
-                fontSize={15}
+                fontSize={isLaptop ? 16 : 18}
                 marginBottom={isTablet ? 20 : 15}
                 maxWidth={isLaptop ? 380 : isMobile ? 450 : "unset"}
                 textAlign={isLaptop ? "unset" : isMobile ? "center" : "unset"}
@@ -238,10 +236,10 @@ const Home = () => {
               <Paragraph
                 color="#383A47"
                 fontFamily="inherit"
-                fontSize={15}
-                marginBottom={10}
+                fontSize={16}
+                marginBottom={isMobile ? 10 : 0}
                 maxWidth={isLaptop ? 380 : isMobile ? 450 : "unset"}
-                border="1px solid red"
+                // border="1px solid red"
                 textAlign={isLaptop ? "unset" : isMobile ? "center" : "unset"}
                 className="m-sm-auto m-lg-0"
               >
