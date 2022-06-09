@@ -20,7 +20,7 @@ const Footer = () => {
     query: `(min-width: ${VIEWPORT_BREAKPOINTS.md}px)`,
   });
   return (
-    <Container maxWidth={1100} fontFamily="'DM Sans', sans-serif">
+    <Container maxWidth={1180} fontFamily="'DM Sans', sans-serif">
       <Pane
         display="flex"
         flexDirection={isTablet ? "row" : "column"}
