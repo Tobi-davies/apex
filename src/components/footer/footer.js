@@ -12,9 +12,9 @@ import { NavList } from "../header/header";
 import { VIEWPORT_BREAKPOINTS } from "../../enums";
 
 const Footer = () => {
-  const isMobile = useMediaQuery({
-    query: `(min-width: ${VIEWPORT_BREAKPOINTS.sm}px)`,
-  });
+  // const isMobile = useMediaQuery({
+  //   query: `(min-width: ${VIEWPORT_BREAKPOINTS.sm}px)`,
+  // });
 
   const isTablet = useMediaQuery({
     query: `(min-width: ${VIEWPORT_BREAKPOINTS.md}px)`,
