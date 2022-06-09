@@ -44,10 +44,11 @@ const Home = () => {
 
       {/* Features */}
       <Container
-        maxWidth={1100}
+        maxWidth={1160}
         fontFamily="'DM Sans', sans-serif"
         paddingBottom={isTablet ? majorScale(10) : majorScale(4)}
         paddingTop={isTablet ? majorScale(3) : majorScale(2)}
+        border="1px solid black"
       >
         {/* heading */}
         <Text
@@ -172,16 +173,18 @@ const Home = () => {
         fontFamily="'DM Sans', sans-serif"
       >
         <Container
-          maxWidth={1100}
+          maxWidth={1180}
           display="flex"
           flexDirection={isLaptop ? "row" : "column"}
+          border="1px solid black"
         >
           <Pane
             width={isLaptop ? "50%" : "100%"}
-            // border="1px solid red"
+            border="1px solid red"
             display="flex"
             alignItems="center"
             justifyContent={isLaptop ? "unset" : "center"}
+            // paddingLeft={15}
           >
             <img
               width={isLaptop ? "80%" : isMobile ? "400px" : "100%"}
@@ -195,6 +198,7 @@ const Home = () => {
             // border="1px solid red"
             display="flex"
             alignItems="center"
+            paddingRight={15}
           >
             <Pane
               maxWidth={isLaptop ? 420 : "unset"}
@@ -258,7 +262,7 @@ const Home = () => {
         fontFamily="'DM Sans', sans-serif"
       >
         <Container
-          maxWidth={1130}
+          maxWidth={1200}
           className="row"
           flexDirection={
             isLaptop ? "row" : isTablet ? "column" : "column-reverse"
@@ -269,16 +273,22 @@ const Home = () => {
             className="col-12 col-lg-5"
             display="flex"
             alignItems="center"
+            justifyContent={isLaptop ? "unset" : "center"}
             border="1px solid red"
           >
             <Pane
               // className="ml-n3 mr-n3 mx-sm-auto ml-lg-n3"
-              className="mx-sm-auto ml-n3 mr-n3"
+              //note the styling
+              // className="mr-n3"
+              // className="mx-sm-auto"
+              // className="mx-sm-auto ml-n3 mr-n3"
               // maxWidth={420}
-              maxWidth={isLaptop ? 420 : isMobile ? 600 : "unset"}
+              maxWidth={isLaptop ? 450 : isMobile ? 600 : "unset"}
               textAlign={isLaptop ? "unset" : isMobile ? "center" : "unset"}
-              border="1px solid red"
-              paddingLeft={isLargeLaptop ? 20 : 5}
+              border="1px solid green"
+              paddingLeft={isLargeLaptop ? 20 : isTablet ? 5 : 0}
+              marginRight={isLaptop ? -15 : isMobile ? 0 : -15}
+              marginLeft={isMobile ? 0 : -15}
             >
               <Paragraph
                 fontFamily="Uregular"
@@ -351,6 +361,7 @@ const Home = () => {
           flexDirection={
             isLaptop ? "row" : isTablet ? "column-reverse" : "column"
           }
+          gap={isLaptop ? 0 : 20}
           // className="row"
         >
           <Pane
@@ -368,16 +379,20 @@ const Home = () => {
           </Pane>
           <Pane
             //  width="50%"
-            className="col-12 col-lg-6 pr-4"
-            border="1px solid blue"
+            className="col-12 col-lg-6"
+            // className="col-12 col-lg-6 pr-4"
+            border="2px solid blue"
             display="flex"
             alignItems="center"
             justifyContent={isLaptop ? "flex-end" : "center"}
+            paddingRight={isLaptop ? 24 : isMobile ? 15 : 0}
+            paddingLeft={isMobile ? "unset" : 0}
           >
             <Pane
               border="1px solid yellow"
               maxWidth={isLaptop ? 421 : "unset"}
               textAlign={isLaptop ? "unset" : "center"}
+              width={isLaptop ? "unset" : isMobile ? 700 : "unset"}
             >
               <Paragraph
                 fontFamily="Uregular"
@@ -396,14 +411,15 @@ const Home = () => {
                 available.
               </Paragraph>
               <Pane
+                // className="row"
                 className="row"
                 // display="flex"
                 // maxWidth={isLaptop ? "unset" : 400}
                 // justifyContent="center"
                 // alignItems="center"
-                width="100%"
+                width={isLaptop ? "100%" : isMobile ? 400 : "100%"}
                 margin="auto"
-                border="3px solid blue"
+                border="1px solid red"
               >
                 <Pane
                   className="col-md-5 mr-3"
@@ -448,12 +464,68 @@ const Home = () => {
                     fontSize={14}
                     border="1px solid blue"
                     // marginLeft={-15}
+                    // paddingRight={isLaptop ? "-15px !important" : 0}
                     paddingRight="-15px !important"
                   >
                     Chats in <br /> Last 2022
                   </Pane>
                 </Pane>
                 {/* <Pane></Pane> */}
+              </Pane>
+              {/* NEW */}
+              <Pane
+                className="mx-n3 mx-sm-auto mx-lg-0"
+                // className="row mx-sm-auto mx-lg-0"
+                display="flex"
+                width={isLaptop ? "unset" : isMobile ? 400 : "unset"}
+                // alignItems={isLaptop ? "unset" : isMobile ? "center" : "unset"}
+                // justifyContent={
+                //   isLaptop ? "unset" : isMobile ? "center" : "unset"
+                // }
+              >
+                <Pane
+                  className="col-md-6"
+                  display="flex"
+                  border="1px solid red"
+                  marginLeft={isLaptop ? -15 : 0}
+                >
+                  <Pane
+                    // className="col-md-6"
+                    fontWeight={700}
+                    fontFamily="inherit"
+                    color="var(--darker-default-color)"
+                    fontSize={26}
+                  >
+                    4.3K+
+                  </Pane>
+                  <Pane className="col-md-6" fontSize={14}>
+                    Website’s Powering
+                  </Pane>
+                </Pane>
+                <Pane
+                  className="col-md-6"
+                  display="flex"
+                  border="1px solid red"
+                >
+                  <Pane
+                    // className="col-md-5"
+                    // className="mx-n5"
+                    fontWeight={700}
+                    fontFamily="inherit"
+                    color="var(--darker-default-color)"
+                    fontSize={26}
+                  >
+                    7M+
+                  </Pane>
+                  <Pane
+                    className="col-md-7"
+                    fontSize={14}
+                    border="1px solid blue"
+                    textAlign="left"
+                  >
+                    Chats in <br /> Last 2022
+                  </Pane>
+                </Pane>
               </Pane>
             </Pane>
           </Pane>
@@ -469,7 +541,7 @@ const Home = () => {
         backgroundRepeat="no-repeat"
         backgroundSize="30% 60%"
       >
-        <Container maxWidth={1100}>
+        <Container maxWidth={1180} border="1px solid black">
           <Paragraph
             is="h2"
             textAlign="center"

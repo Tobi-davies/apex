@@ -17,14 +17,19 @@ import styled from "@emotion/styled";
 const Container = styled(Pane)`
   width: 100%;
   margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
 
   /* overflow: auto; */
 
   /* &::-webkit-scrollbar {
     display: none;
   } */
+
+  @media (max-width: 992px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 `;
 
 export default Container;

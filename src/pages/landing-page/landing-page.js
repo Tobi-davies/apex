@@ -26,10 +26,15 @@ const LandingPage = () => {
 
   return (
     <Pane fontFamily="'DM Sans', sans-serif" marginTop={30}>
-      <Container maxWidth={1130} display="flex" className="row">
+      <Container
+        maxWidth={1210}
+        display="flex"
+        className="row"
+        // border="1px solid blue"
+      >
         <Pane
           className="col-12 col-lg-5"
-          // border="1px solid blue"
+          // border="1px solid green"
           // paddingRight={40}
           paddingTop={isLaptop ? 70 : 30}
           // marginRight={40}
@@ -39,7 +44,7 @@ const LandingPage = () => {
             //  width="85%"
             maxWidth={isLaptop ? 450 : "100%"}
             textAlign={isLaptop ? "unset" : isMobile ? "center" : "unset"}
-            className="ml-n3 mt-n3 mt-sm-0 ml-sm-0"
+            className="ml-n3 mt-n4 mt-xl-0 ml-xl-0"
           >
             <Paragraph
               color="#1B1C20"
@@ -158,7 +163,9 @@ const LandingPage = () => {
                     <Goldstar />
                     <Graystar />
                   </Pane>
-                  <Text>Rating</Text>
+                  <Text fontFamily="inherit" color="var(--text-default-color)">
+                    Rating
+                  </Text>
                 </Pane>
               </Pane>
             </Pane>

@@ -39,37 +39,55 @@ const Header = () => {
   });
   return (
     <Container
-      maxWidth={1100}
-      display="flex"
-      alignItems="center"
-      justifyContent="space-between"
-      fontFamily="'DM Sans', sans-serif"
-      // fontFamily="DM Sans"
-      paddingY={majorScale(1)}
+      maxWidth={1180}
+      // display="flex"
+      // alignItems="center"
+      // justifyContent="space-between"
+      // fontFamily="'DM Sans', sans-serif"
+      // // fontFamily="DM Sans"
+      // paddingY={majorScale(1)}
+      border="1px solid red"
+      // paddingX={350}
     >
-      <Pane>
-        <img src={ApexLogo} alt="apex logo" />
-      </Pane>
+      <Pane
+        // paddingX={15}
+        display="flex"
+        alignItems="center"
+        justifyContent="space-between"
+        fontFamily="'DM Sans', sans-serif"
+        // fontFamily="DM Sans"
+        paddingY={majorScale(1)}
+      >
+        <Pane>
+          <img src={ApexLogo} alt="apex logo" />
+        </Pane>
 
-      {isTablet ? (
-        <>
-          <NavList>
-            <li>Demos</li>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Pages</li>
-            <li>Contact</li>
-          </NavList>
-          <Pane>
-            <Text fontSize="16px" fontFamily="inherit">
-              Login
-            </Text>
-            <GetStartedBtn>Get Started Free</GetStartedBtn>
-          </Pane>
-        </>
-      ) : (
-        <Hamburger />
-      )}
+        {isTablet ? (
+          <>
+            <NavList>
+              <li>Demos</li>
+              <li>About</li>
+              <li>Blog</li>
+              <li>Pages</li>
+              <li>Contact</li>
+            </NavList>
+            <Pane>
+              <Text
+                fontSize="16px"
+                fontFamily="inherit"
+                fontWeight={500}
+                color="var(--darker-default-color)"
+                cursor="pointer"
+              >
+                Login
+              </Text>
+              <GetStartedBtn>Get Started Free</GetStartedBtn>
+            </Pane>
+          </>
+        ) : (
+          <Hamburger />
+        )}
+      </Pane>
     </Container>
   );
 };
