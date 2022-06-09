@@ -227,9 +227,7 @@ const Home = () => {
                 color="#383A47"
                 fontFamily="inherit"
                 fontSize={15}
-                // marginBottom={20}
                 marginBottom={isTablet ? 20 : 15}
-                // maxWidth="90%"
                 maxWidth={isLaptop ? 380 : isMobile ? 450 : "unset"}
                 textAlign={isLaptop ? "unset" : isMobile ? "center" : "unset"}
                 className="mx-sm-auto mx-lg-0"
