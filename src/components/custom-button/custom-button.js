@@ -13,6 +13,11 @@ const GetStartedBtn = styled.button`
   cursor: pointer;
   display: flex;
   align-items: center;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: #fd6003;
+  }
 `;
 
 const CustomBtn = ({ children }) => {

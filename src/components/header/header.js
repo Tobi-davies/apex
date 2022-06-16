@@ -6,18 +6,19 @@ import Container from "../container/container";
 import ApexLogo from "../../assets/images/Apex-Logo.png";
 import { ReactComponent as Hamburger } from "../../assets/icons/menu-hamburger.svg";
 import { VIEWPORT_BREAKPOINTS } from "../../enums";
+import CustomBtn from "../custom-button/custom-button";
 
-const GetStartedBtn = styled.button`
-  outline: none;
-  padding: 8px 12px;
-  background-color: #fb8e0b;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-family: "DM Sans", sans-serif;
-  margin-left: 20px;
-  font-size: 16px;
-`;
+// const GetStartedBtn = styled.button`
+//   outline: none;
+//   padding: 8px 12px;
+//   background-color: #fb8e0b;
+//   border: none;
+//   border-radius: 5px;
+//   color: white;
+//   font-family: "DM Sans", sans-serif;
+//   margin-left: 20px;
+//   font-size: 16px;
+// `;
 
 export const NavList = styled.ul`
   display: flex;
@@ -46,7 +47,8 @@ const Header = () => {
       // fontFamily="'DM Sans', sans-serif"
       // // fontFamily="DM Sans"
       // paddingY={majorScale(1)}
-      border="1px solid red"
+      // border="1px solid red"
+      paddingTop={5}
       // paddingX={350}
     >
       <Pane
@@ -71,7 +73,7 @@ const Header = () => {
               <li>Pages</li>
               <li>Contact</li>
             </NavList>
-            <Pane>
+            <Pane display="flex" alignItems="center" gap={25}>
               <Text
                 fontSize="16px"
                 fontFamily="inherit"
@@ -81,7 +83,8 @@ const Header = () => {
               >
                 Login
               </Text>
-              <GetStartedBtn>Get Started Free</GetStartedBtn>
+              {/* <GetStartedBtn>Get Started Free</GetStartedBtn> */}
+              <CustomBtn>Get Started Free</CustomBtn>
             </Pane>
           </>
         ) : (

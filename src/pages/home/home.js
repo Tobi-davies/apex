@@ -393,12 +393,15 @@ const Home = () => {
             // paddingRight={isLaptop ? 24 : isMobile ? 15 : 0}
             paddingRight={0}
             paddingLeft={isMobile ? "unset" : 0}
+            // marginLeft={isMobile ? "unset" : -15}
+            // marginRight={isMobile ? "unset" : -35}
           >
             <Pane
               // border="1px solid yellow"
               maxWidth={isLaptop ? 419 : "unset"}
               textAlign={isLaptop ? "unset" : isMobile ? "center" : "unset"}
               width={isLaptop ? "unset" : isMobile ? 700 : "unset"}
+              marginX={isMobile ? "unset" : -15}
             >
               <Paragraph
                 fontFamily="Uregular"
@@ -464,7 +467,7 @@ const Home = () => {
                   </Pane>
                   <Pane
                     className="col-md-7"
-                    fontSize={14}
+                    fontSize={13}
                     // border="1px solid blue"
                     textAlign="left"
                   >
