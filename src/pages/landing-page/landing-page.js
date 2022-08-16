@@ -10,6 +10,7 @@ import ladyImage from "../../assets/images/lady.svg";
 import customersImage from "../../assets/images/customers.svg";
 import SectionDivider from "../../components/section-divider/section-divider";
 import { VIEWPORT_BREAKPOINTS } from "../../enums/index";
+//anim
 
 const LandingPage = () => {
   const isMobile = useMediaQuery({
