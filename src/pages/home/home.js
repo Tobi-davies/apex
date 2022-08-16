@@ -59,6 +59,7 @@ const Home = () => {
           fontFamily="Uregular"
           paddingBottom={10}
           // marginBottom={10}
+          data-aos="fade-down"
         >
           Features for a better experience
         </Text>
@@ -78,6 +79,7 @@ const Home = () => {
             textAlign={isTablet ? "unset" : "center"}
             gap={minorScale(3)}
             padding={12}
+            data-aos="fade-right"
           >
             <Pane>
               <img
@@ -112,6 +114,7 @@ const Home = () => {
             textAlign={isTablet ? "unset" : "center"}
             gap={minorScale(3)}
             padding={12}
+            data-aos="fade-up"
           >
             <Pane>
               <img width="45px" src={SaveTimeIcon} alt="save time icon" />
@@ -142,6 +145,7 @@ const Home = () => {
             textAlign={isTablet ? "unset" : "center"}
             gap={minorScale(3)}
             padding={12}
+            data-aos="fade-left"
           >
             <Pane>
               <img width="45px" src={KeepSafeIcon} alt="keep safe icon" />
@@ -185,6 +189,8 @@ const Home = () => {
             alignItems="center"
             justifyContent={isLaptop ? "unset" : "center"}
             // paddingLeft={15}
+            data-aos="fade-right"
+            data-aos-delay="50"
           >
             <img
               width={isLaptop ? "80%" : isMobile ? "400px" : "100%"}
@@ -222,6 +228,8 @@ const Home = () => {
                 maxWidth={600}
                 // border="1px solid red"
                 className="mx-sm-auto mx-lg-0"
+                data-aos="fade-up"
+                data-aos-delay="150"
               >
                 Meet your customers, with live video chat
               </Paragraph>
@@ -233,6 +241,8 @@ const Home = () => {
                 maxWidth={isLaptop ? 380 : isMobile ? 450 : "unset"}
                 textAlign={isLaptop ? "unset" : isMobile ? "center" : "unset"}
                 className="mx-sm-auto mx-lg-0"
+                data-aos="fade-up"
+                data-aos-delay="250"
               >
                 Proin faucibus nibh et sagittis a. Lacinia purus ac amet
                 pellentesque aliquam enim.
@@ -246,6 +256,8 @@ const Home = () => {
                 // border="1px solid red"
                 textAlign={isLaptop ? "unset" : isMobile ? "center" : "unset"}
                 className="m-sm-auto m-lg-0"
+                data-aos="fade-up"
+                data-aos-delay="350"
               >
                 Get paychecks up to two days early. Get a $20 bonus when you
                 receive qualifying direct deposits
@@ -297,10 +309,18 @@ const Home = () => {
                 color="var(--darker-default-color)"
                 lineHeight={1}
                 marginBottom={isTablet ? 30 : 20}
+                data-aos="fade-up"
+                data-aos-delay="150"
               >
                 Start selling directly inside conversations
               </Paragraph>
-              <Paragraph fontFamily="inherit" fontSize={15} marginBottom={30}>
+              <Paragraph
+                fontFamily="inherit"
+                fontSize={15}
+                marginBottom={30}
+                data-aos="fade-up"
+                data-aos-delay="250"
+              >
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered all injected humour or randomised
                 words which don't look even slightly believable.{" "}
@@ -313,6 +333,8 @@ const Home = () => {
                 justifyContent={
                   isLaptop ? "unset" : isMobile ? "center" : "unset"
                 }
+                data-aos="zoom-in"
+                data-aos-delay="700"
               >
                 <CustomBtn>Start Chatting Now</CustomBtn>
               </Pane>
@@ -410,10 +432,18 @@ const Home = () => {
                 color="var(--darker-default-color)"
                 lineHeight={1}
                 marginBottom={20}
+                data-aos="fade-up"
+                data-aos-delay="150"
               >
                 Get direct orders from your customers
               </Paragraph>
-              <Paragraph fontFamily="inherit" fontSize={15} marginBottom={60}>
+              <Paragraph
+                fontFamily="inherit"
+                fontSize={15}
+                marginBottom={60}
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 Create custom landing pages with Rareblocks that converts more
                 visitors than any website. With lots of unique blocks easily
                 build a page. There are many variations of passages of
@@ -501,6 +531,8 @@ const Home = () => {
             color="#fff"
             fontFamily="inherit"
             marginBottom={majorScale(5)}
+            data-aos="fade-down"
+            data-aos-delay="400"
           >
             Our blessed client <br /> said about us 😍
           </Paragraph>
@@ -513,6 +545,8 @@ const Home = () => {
                   paddingX={30}
                   borderRadius={8}
                   position="relative"
+                  data-aos="fade-right"
+                  data-aos-delay="800"
                 >
                   <Pane
                     position="absolute"
@@ -543,7 +577,13 @@ const Home = () => {
                 </Pane>
 
                 <Pane display="flex" justifyContent="center" className="mt-3">
-                  <Pane display="flex" alignItems="center" gap={15}>
+                  <Pane
+                    display="flex"
+                    alignItems="center"
+                    gap={15}
+                    data-aos="fade-up"
+                    data-aos-delay="1000"
+                  >
                     <img src={wadeImage} width="50" alt="wade warren" />
                     <Pane>
                       <Paragraph
@@ -570,6 +610,8 @@ const Home = () => {
                   paddingX={30}
                   borderRadius={8}
                   position="relative"
+                  data-aos="fade-left"
+                  data-aos-delay="800"
                 >
                   <Pane
                     position="absolute"
@@ -600,7 +642,13 @@ const Home = () => {
                 </Pane>
 
                 <Pane display="flex" justifyContent="center" className="mt-3">
-                  <Pane display="flex" alignItems="center" gap={15}>
+                  <Pane
+                    display="flex"
+                    alignItems="center"
+                    gap={15}
+                    data-aos="fade-up"
+                    data-aos-delay="1000"
+                  >
                     {/* <Pane
                       backgroundImage={`url(${estherImage})`}
                       height={40}
@@ -649,11 +697,15 @@ const Home = () => {
             color="var(--darker-default-color)"
             lineHeight={isTablet ? 1 : 1.2}
             marginBottom={isTablet ? 30 : 20}
+            data-aos="fade-up"
+            data-aos-delay="1050"
           >
             Ready to grow your business? Start with Apex, become faster every
             second
           </Paragraph>
-          <CustomBtn>Start Chatting Now</CustomBtn>
+          <div data-aos="zoom-in" data-aos-delay="1200">
+            <CustomBtn>Start Chatting Now</CustomBtn>
+          </div>
         </Container>
 
         <Footer />
