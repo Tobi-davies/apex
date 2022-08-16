@@ -48,6 +48,7 @@ const Home = () => {
         fontFamily="'DM Sans', sans-serif"
         paddingBottom={isTablet ? majorScale(10) : majorScale(4)}
         paddingTop={isTablet ? majorScale(3) : majorScale(2)}
+        overflowX="hidden"
         // border="1px solid black"
       >
         {/* heading */}
@@ -175,6 +176,7 @@ const Home = () => {
           isLaptop ? majorScale(10) : isMobile ? majorScale(7) : majorScale(5)
         }
         fontFamily="'DM Sans', sans-serif"
+        overflowX="hidden"
       >
         <Container
           maxWidth={1180}
@@ -272,6 +274,7 @@ const Home = () => {
         backgroundColor="#FFFFFF"
         paddingY={majorScale(3)}
         fontFamily="'DM Sans', sans-serif"
+        overflowX="hidden"
       >
         <Container
           maxWidth={1200}
@@ -376,6 +379,7 @@ const Home = () => {
         paddingY={isTablet ? majorScale(9) : majorScale(5)}
         backgroundColor="var(--gray-background-color)"
         fontFamily="'DM Sans', sans-serif"
+        overflowX="hidden"
       >
         <Container
           maxWidth={1130}
@@ -518,6 +522,7 @@ const Home = () => {
         backgroundImage={`url(${curlyShapes})`}
         backgroundRepeat="no-repeat"
         backgroundSize="30% 60%"
+        overflowX="hidden"
       >
         <Container
           maxWidth={1180}
@@ -679,7 +684,7 @@ const Home = () => {
       </Pane>
 
       {/* Ready to grow */}
-      <Pane backgroundColor="var(--gray-background-color)">
+      <Pane backgroundColor="var(--gray-background-color)" overflowX="hidden">
         <Container
           maxWidth={700}
           paddingY={isTablet ? majorScale(10) : majorScale(4)}
